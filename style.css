@@ -72,7 +72,7 @@ main {
 
 .container {
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .clip-path {
@@ -172,28 +172,31 @@ h1 {
 /* first section after main */
 .first-aside {
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 80px;
   color: var(--color-body);
+  min-height: 100vh;
 }
 
 .aside-para {
   letter-spacing: 0.5px;
-  max-width: 375px;
+  width: 375px;
   font-size: 1.2rem;
 }
 
 .first-aside h2 {
   color: var(--color-headings);
   font-weight: 900;
-  font-size: 2.4rem;
-  max-width: 400px;
+  font-size: 2.7rem;
+  width: 400px;
   text-align: center;
 }
 .btn-input {
   padding-right: 25px;
 }
+
+/* search btn inside image */
 .btn > img {
   width: 20px;
   margin: 0 10px;
@@ -201,8 +204,6 @@ h1 {
 
 input[name="domain-name"] {
   border-style: none;
-  border-radius: 30px;
-  border-top: 2px solid var(--color-border);
   padding: 15px;
 }
 
@@ -210,5 +211,41 @@ input[name="domain-name"]:focus {
   outline: none;
 }
 
+.inputAndBtn {
+  border-radius: 45px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 20px 30px #f3f1f1;
+  margin-top: 25px;
+  padding: 5px;
+  height: 60px;
+  position: relative;
+  outline: none;
+}
+
+input[name="domain-name"],
 .btn-input {
+  border-radius: 45px;
+  position: relative;
+  bottom: 19px;
+}
+
+@media screen and (min-width: 700px) {
+  .first-aside h2 {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .aside-para {
+    width: 100%;
+    text-align: center;
+  }
+  .inputAndBtn {
+    width: 650px;
+  }
+
+  .btn-input {
+    border-radius: 45px;
+    position: relative;
+    bottom: 19px;
+    left: 260px;
+  }
 }
