@@ -1,2 +1,129 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  border-bottom: 1px rgb(61, 61, 61) solid;
+}
+.bg-colour {
+  background-color: black;
+}
+/* header navigation */
+
+.initiaLogo {
+  width: 150px;
+}
+
+.nav-list {
+  border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+.list-id {
+  padding: 0.55rem 0 0.55rem 1.5rem;
+}
+
+/* Navigation media Query */
+@media screen and (min-width: 768px) {
+  .main-list {
+    flex-grow: 0;
+  }
+  .nav-list {
+    border-style: none;
+  }
+  .list-id {
+    padding: 0 20px;
+  }
+}
+
+/* first section */
+.flex {
+  display: flex;
+}
+
+main {
+  flex-direction: column;
+  background: black no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 50vh;
+}
+header {
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  align-self: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+.btn {
+  border-style: none;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.btn-stretched {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+p {
+  width: 300px;
+  align-self: center;
+  letter-spacing: 1px;
+}
+
+/* the section for the main image */
+.main-img {
+  justify-content: center;
+  align-self: center;
+  background: black no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-img img {
+  width: 80vw;
+  height: 440px;
 }
