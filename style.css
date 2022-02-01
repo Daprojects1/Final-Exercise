@@ -164,9 +164,6 @@ h1 {
     align-self: flex-start;
     text-align: left;
   }
-  .btn-primary {
-    align-self: flex-start;
-  }
 }
 
 /* first section after main */
@@ -176,35 +173,44 @@ h1 {
   align-items: center;
   margin-top: 80px;
   color: var(--color-body);
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .aside-para {
   letter-spacing: 0.5px;
-  width: 375px;
+  width: 73vw;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .first-aside h2 {
   color: var(--color-headings);
   font-weight: 900;
-  font-size: 2.7rem;
-  width: 400px;
+  font-size: 2.2rem;
+  width: 300px;
   text-align: center;
-}
-.btn-input {
-  padding-right: 25px;
 }
 
 /* search btn inside image */
 .btn > img {
-  width: 20px;
+  width: 15px;
   margin: 0 10px;
 }
 
 input[name="domain-name"] {
   border-style: none;
-  padding: 15px;
+  padding: 10px;
+  border-radius: 45px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 416px) {
+  .btn > img {
+    width: 20px;
+  }
+  input[name="domain-name"] {
+    font-size: 1.2rem;
+  }
 }
 
 input[name="domain-name"]:focus {
@@ -212,21 +218,21 @@ input[name="domain-name"]:focus {
 }
 
 .inputAndBtn {
+  flex-direction: row;
+  justify-content: space-between;
   border-radius: 45px;
   border: 1px solid var(--color-border);
-  box-shadow: 0 0 20px 30px #f3f1f1;
-  margin-top: 25px;
-  padding: 5px;
-  height: 60px;
-  position: relative;
+  box-shadow: 0 0 20px 30px #ececec;
+  margin: 25px 10px 0 20px;
+  padding: 7px;
+  max-width: 900px;
+  height: 65px;
   outline: none;
 }
 
-input[name="domain-name"],
 .btn-input {
-  border-radius: 45px;
-  position: relative;
-  bottom: 19px;
+  border-radius: 90px;
+  padding: 0.87rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -244,8 +250,181 @@ input[name="domain-name"],
 
   .btn-input {
     border-radius: 45px;
-    position: relative;
-    bottom: 19px;
-    left: 260px;
   }
+}
+
+.offer-list {
+  white-space: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+}
+
+@media screen and (min-width: 600px) {
+  .offer-list {
+    width: 68vw;
+  }
+}
+.section-ul {
+  margin-top: 25px;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 32px;
+}
+
+.first-li,
+.second-li {
+  flex-direction: column;
+  color: var(--color-headings);
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.first-li li,
+.second-li li {
+  margin: 12px 20px;
+}
+
+.second-li {
+  padding-top: 8px;
+}
+.offer-list li {
+  list-style: none;
+}
+
+.border-li {
+  padding: 1px 25px;
+  color: white;
+  background-color: var(--color-secondary);
+  border: 3px solid;
+  border-radius: 30px;
+}
+
+/* changing the list to be in a row, and so its displayed in a line */
+@media screen and (min-width: 855px) {
+  .offer-list {
+    width: 100%;
+  }
+  .section-ul {
+    justify-content: center;
+  }
+  .first-li,
+  .second-li {
+    flex-direction: row;
+  }
+
+  .second-li,
+  .next-li {
+    padding-top: 5px;
+  }
+}
+
+/* aside section for the cards */
+
+.second-aside {
+  margin-top: 30px;
+  min-height: 65vh;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.3px;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  max-width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s;
+  margin-bottom: 100px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card-head {
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 20px 20px 5px;
+}
+
+.card-text {
+  color: aliceblue;
+}
+.card-text .amount {
+  font-size: 2.3rem;
+}
+
+.card-text .percent {
+  margin: 0 15px;
+  padding: 5px 15px;
+  border-radius: 35px;
+  color: white;
+  font-weight: 800;
+  font-size: 0.85rem;
+  background-color: #15c3e2;
+}
+
+@media screen and (min-width: 450px) {
+  .card {
+    font-size: 1.2rem;
+  }
+  .card-text .amount {
+    font-size: 2.7rem;
+  }
+  .card-text .percent {
+    font-size: 1rem;
+  }
+}
+.card-body {
+  flex-direction: column;
+  word-wrap: none;
+  width: 100%;
+  color: var(--color-headings);
+}
+
+.card-body ul {
+  list-style-type: none;
+  padding: 13px;
+  width: 100%;
+}
+
+.card-body li {
+  padding: 10px 20px 10px 0;
+  text-align: left;
+}
+
+.card-body li::before {
+  content: url(icons/tick.svg);
+  padding-right: 20px;
+}
+
+.btn-card {
+  color: var(--color-headings);
+  width: 300px;
+  align-self: center;
+  border: 2px solid var(--color-headings);
+}
+
+@media screen and (min-width: 500px) {
+  .btn-card {
+    width: 400px;
+  }
+}
+
+.btn-card:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+
+.popular-color {
+  background-color: var(--color-primary);
+}
+
+.popular-color .percent {
+  background-color: #126de4;
 }
