@@ -630,7 +630,8 @@ input[name="domain-name"]:focus {
   align-items: center;
 }
 .ipad-aside h5 {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
+  max-width: 250px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -660,6 +661,7 @@ input[name="domain-name"]:focus {
   }
   .ipad-aside h5 {
     text-align: left;
+    max-width: 700px;
   }
 }
 
@@ -686,42 +688,39 @@ input[name="domain-name"]:focus {
 }
 
 .test-card {
-  box-shadow: 0 0 20px 30px #636262;
+  box-shadow: 0 0 20px 30px #dbdbdb;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-  background-color: white;
+  background-color: rgb(221, 219, 219);
   width: 80vw;
   margin-top: 35px;
   position: relative;
 }
 
-.img-text {
-  position: relative;
+.img-text-s {
+  margin-top: 30px;
 }
-.img-text img {
-  padding-top: 30px;
+.img-text-s img {
   width: 85%;
   max-width: 500px;
   align-self: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .test-card .test-p {
-  font-size: 1.5rem;
-  padding: 50px;
+  font-size: 1.3rem;
+  width: 80%;
   color: var(--color-body-darker);
 }
 
 .text-icon {
-  width: 200px;
-  height: 15px;
   background-color: var(--color-secondary);
 }
 .img-container.test-icon {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 50px;
+  top: 50px; */
   background-color: var(--color-accent);
 }
 
@@ -729,24 +728,32 @@ input[name="domain-name"]:focus {
   fill: white;
 }
 
+.nt-icon svg {
+  width: 40px;
+}
 .line-text p {
-  padding-left: 10px;
   color: var(--color-headings);
-  position: relative;
 }
 
-.line-text p::after {
-  content: "ABC COMPANY";
+.double-text {
+  padding-left: 20px;
+}
+
+.double-text p {
+  margin: 0;
+}
+.double-text .second {
   color: var(--color-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-  position: absolute;
-  top: 49px;
-  left: 14px;
+  font-size: 0.9rem;
 }
 
-@media screen and(min-width: 700px) {
-  .img-text {
-    flex-direction: row;
+@media screen and (min-width: 750px) {
+  .img-text-s {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+  .img-text-s .test-p {
+    font-size: 1.5rem;
   }
 }
