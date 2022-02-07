@@ -50,139 +50,136 @@
         </div>
       </div>
     </nav>
-    <!-- container for the main body so that i'll be able to set a max-width -->
-    <div class="mbody-container">
-      <main>
-        <div class="container flex clip-path">
-          <header class="flex first-header">
-            <h1>Cloud Hosting for Pros</h1>
-            <p class="first-para">
-              Deploy your websites in less than 60 seconds.
-            </p>
-            <button class="btn btn-primary btn-stretched">Get Started</button>
-          </header>
-          <section class="main-img">
-            <img
-              class="flex"
-              src="images/banner.png"
-              alt="a picture of computers being connected"
-            />
-          </section>
-        </div>
-      </main>
-      <aside class="flex first-aside">
-        <h2>Starting at $10 per month</h2>
-        <p class="aside-para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          voluptates!
-        </p>
-        <div class="inputAndBtn flex">
-          <input
-            type="text"
-            name="domain-name"
-            id="text-input-field"
-            placeholder="Enter domain name here..."
+    <main>
+      <div class="container flex clip-path">
+        <header class="flex first-header">
+          <h1>Cloud Hosting for Pros</h1>
+          <p class="first-para">
+            Deploy your websites in less than 60 seconds.
+          </p>
+          <button class="btn btn-primary btn-stretched">Get Started</button>
+        </header>
+        <section class="main-img">
+          <img
+            class="flex"
+            src="images/banner.png"
+            alt="a picture of computers being connected"
           />
-          <button class="btn btn-primary btn-input">
-            <img src="icons/search.svg" alt="" />Search
-          </button>
+        </section>
+      </div>
+    </main>
+    <aside class="flex first-aside">
+      <h2>Starting at $10 per month</h2>
+      <p class="aside-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+        voluptates!
+      </p>
+      <div class="inputAndBtn flex">
+        <input
+          type="text"
+          name="domain-name"
+          id="text-input-field"
+          placeholder="Enter domain name here..."
+        />
+        <button class="btn btn-primary btn-input">
+          <img src="icons/search.svg" alt="" />Search
+        </button>
+      </div>
+      <!-- created a div to hold the list and to align overal item -->
+      <div class="offer-list flex">
+        <ul class="flex section-ul">
+          <!-- There are divs inside the ul as there were two lists and then it merges into one in a bigger screen -->
+          <div class="first-li flex">
+            <li class="border-li one">.com $9</li>
+            <li class="next-li two">.space $11</li>
+            <li class="next-li three">.net $10</li>
+          </div>
+          <div class="second-li flex">
+            <li class="four">.sg $10</li>
+            <li class="five">.info $14</li>
+            <li class="six">.xyz $10</li>
+          </div>
+        </ul>
+      </div>
+    </aside>
+    <!-- second section with 3 cards  -->
+    <aside class="second-aside flex">
+      <!-- card 1 -->
+      <div class="card card-one">
+        <div class="card-head">
+          <h3>Entry</h3>
+          <p class="card-text">
+            <span class="amount">$14</span> /month<span class="percent"
+              >10% OFF</span
+            >
+          </p>
+          <p>Easy start on the cloud</p>
         </div>
-        <!-- created a div to hold the list and to align overal item -->
-        <div class="offer-list flex">
-          <ul class="flex section-ul">
-            <!-- There are divs inside the ul as there were two lists and then it merges into one in a bigger screen -->
-            <div class="first-li flex">
-              <li class="border-li one">.com $9</li>
-              <li class="next-li two">.space $11</li>
-              <li class="next-li three">.net $10</li>
-            </div>
-            <div class="second-li flex">
-              <li class="four">.sg $10</li>
-              <li class="five">.info $14</li>
-              <li class="six">.xyz $10</li>
-            </div>
+        <div class="card-body flex">
+          <ul>
+            <li>Unlimited Websites</li>
+            <li>Unlimited Bandwith</li>
+            <li>100 GB SSD Storage</li>
+            <li>3 GB RAM</li>
           </ul>
+          <button class="btn btn-card" type="submit">BUY NOW</button>
         </div>
-      </aside>
-      <!-- second section with 3 cards  -->
-      <aside class="second-aside flex">
-        <!-- card 1 -->
-        <div class="card card-one">
-          <div class="card-head">
-            <h3>Entry</h3>
-            <p class="card-text">
-              <span class="amount">$14</span> /month<span class="percent"
-                >10% OFF</span
-              >
-            </p>
-            <p>Easy start on the cloud</p>
-          </div>
-          <div class="card-body flex">
-            <ul>
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwith</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
-            </ul>
-            <button class="btn btn-card" type="submit">BUY NOW</button>
-          </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card card-two">
+        <div class="card-head popular-color">
+          <h3>Entry</h3>
+          <p class="card-text">
+            <span class="amount">$14</span> /month<span class="percent"
+              >10% OFF</span
+            >
+          </p>
+          <p>Easy start on the cloud</p>
         </div>
-        <!-- card 2 -->
-        <div class="card card-two">
-          <div class="card-head popular-color">
-            <h3>Entry</h3>
-            <p class="card-text">
-              <span class="amount">$14</span> /month<span class="percent"
-                >10% OFF</span
-              >
-            </p>
-            <p>Easy start on the cloud</p>
-          </div>
-          <div class="card-body flex">
-            <ul>
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwith</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
-            </ul>
-            <button class="btn btn-card" type="submit">BUY NOW</button>
-          </div>
+        <div class="card-body flex">
+          <ul>
+            <li>Unlimited Websites</li>
+            <li>Unlimited Bandwith</li>
+            <li>100 GB SSD Storage</li>
+            <li>3 GB RAM</li>
+          </ul>
+          <button class="btn btn-card" type="submit">BUY NOW</button>
         </div>
-        <!-- card 3 -->
-        <div class="card card-three">
-          <div class="card-head">
-            <h3>Entry</h3>
-            <p class="card-text">
-              <span class="amount">$14</span> /month<span class="percent"
-                >10% OFF</span
-              >
-            </p>
-            <p>Easy start on the cloud</p>
-          </div>
-          <div class="card-body flex">
-            <ul>
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwith</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
-            </ul>
-            <button class="btn btn-card" type="submit">BUY NOW</button>
-          </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card card-three">
+        <div class="card-head">
+          <h3>Entry</h3>
+          <p class="card-text">
+            <span class="amount">$14</span> /month<span class="percent"
+              >10% OFF</span
+            >
+          </p>
+          <p>Easy start on the cloud</p>
         </div>
-      </aside>
-      <aside class="third-aside flex column">
-        <h3>Host on the Cloud to Keep Growing</h3>
-        <p class="first-p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-          magni?
-        </p>
-        <!-- A container for the keep growing section-->
-        <div class="box-container column flex">
-          <!-- box-1 -->
-          <div class="box column flex">
-            <div class="box-seperator1 column flex">
-             <div class="img-container">
-              <svg  class="icon">
+        <div class="card-body flex">
+          <ul>
+            <li>Unlimited Websites</li>
+            <li>Unlimited Bandwith</li>
+            <li>100 GB SSD Storage</li>
+            <li>3 GB RAM</li>
+          </ul>
+          <button class="btn btn-card" type="submit">BUY NOW</button>
+        </div>
+      </div>
+    </aside>
+    <aside class="third-aside flex column">
+      <h3>Host on the Cloud to Keep Growing</h3>
+      <p class="first-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, magni?
+      </p>
+      <!-- A container for the keep growing section-->
+      <div class="box-container column flex">
+        <!-- box-1 -->
+        <div class="box column flex">
+          <div class="box-seperator1 column flex">
+            <div class="img-container">
+              <svg class="icon">
                 <use
                   xlink:href="icons/sprite.svg#easy"
                   width="40px"
@@ -204,7 +201,7 @@
         <div class="box column flex">
           <div class="box-seperator1 column flex">
             <div class="img-container">
-              <svg  class="icon">
+              <svg class="icon">
                 <use
                   xlink:href="icons/sprite.svg#computer"
                   width="40px"
@@ -226,7 +223,7 @@
         <div class="box column flex">
           <div class="box-seperator1 column flex">
             <div class="img-container">
-              <svg  class="icon">
+              <svg class="icon">
                 <use
                   xlink:href="icons/sprite.svg#wordpress"
                   width="40px"
@@ -248,7 +245,7 @@
         <div class="box column flex">
           <div class="box-seperator1 column flex">
             <div class="img-container">
-              <svg  class="icon">
+              <svg class="icon">
                 <use
                   xlink:href="icons/sprite.svg#clock"
                   width="40px"
@@ -266,101 +263,225 @@
           </div>
           <img class="box-mimg fast" src="images/support.jpg" alt="" />
         </div>
-      </aside>
-    </div>
-      <!-- User-Friendly control Panel -->
-      <aside class="fourth-aside">
-        <div class="fourth-container flex">
-          <h4>User-Friendly Control Panel</h4>
-          <img class="ipad-img" src="images/ipad.png" alt="" />
-        </div>
-        <!-- Three text and image sections in this aside -the div directly below will be used to control layput -->
-        <div class="ipad-aside flex column">
-          <!-- section 1 -->
-          <div class="img-text flex column">
-            <div class="img-container final-icons">
-              <svg  class="icon">
-                <use
-                  xlink:href="icons/sprite.svg#snap"
-                  width="40px"
-                  height="40px"
-                ></use>
-              </svg>
+      </div>
+    </aside>
+    <!-- User-Friendly control Panel -->
+    <aside class="fourth-aside">
+      <div class="fourth-container flex">
+        <h4>User-Friendly Control Panel</h4>
+        <img class="ipad-img" src="images/ipad.png" alt="" />
+      </div>
+      <!-- Three text and image sections in this aside -the div directly below will be used to control layput -->
+      <div class="ipad-aside flex column">
+        <!-- section 1 -->
+        <div class="img-text flex column">
+          <div class="img-container final-icons">
+            <svg class="icon">
+              <use
+                xlink:href="icons/sprite.svg#snap"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
           </div>
           <h5>Easy Start and Managed Updates</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime eaque incidunt odit voluptas nobis ratione at voluptatem culpa suscipit.</p>
-          </div>
-          <!-- section 2 -->
-          <div class="img-text flex column">
-            <div class="img-container final-icons">
-              <svg  class="icon">
-                <use
-                  xlink:href="icons/sprite.svg#growth"
-                  width="40px"
-                  height="40px"
-                ></use>
-              </svg>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            maxime eaque incidunt odit voluptas nobis ratione at voluptatem
+            culpa suscipit.
+          </p>
+        </div>
+        <!-- section 2 -->
+        <div class="img-text flex column">
+          <div class="img-container final-icons">
+            <svg class="icon">
+              <use
+                xlink:href="icons/sprite.svg#growth"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
           </div>
           <h5>Staging, Git & WP-CLI</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime eaque incidunt odit voluptas nobis ratione at voluptatem culpa suscipit.</p>
-          </div>
-          <!-- section 3 -->
-          <div class="img-text flex column">
-            <div class="img-container final-icons">
-              <svg  class="icon">
-                <use
-                  xlink:href="icons/sprite.svg#wordpress"
-                  width="40px"
-                  height="40px"
-                ></use>
-              </svg>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            maxime eaque incidunt odit voluptas nobis ratione at voluptatem
+            culpa suscipit.
+          </p>
+        </div>
+        <!-- section 3 -->
+        <div class="img-text flex column">
+          <div class="img-container final-icons">
+            <svg class="icon">
+              <use
+                xlink:href="icons/sprite.svg#wordpress"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
           </div>
           <h5>Dynamic Caching & More</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime eaque incidunt odit voluptas nobis ratione at voluptatem culpa suscipit.</p>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            maxime eaque incidunt odit voluptas nobis ratione at voluptatem
+            culpa suscipit.
+          </p>
         </div>
-      </aside>
-      <!-- testimonials -->
-      <aside class="testimonial-aside">
-        <div class="test-container flex column">
-          <h4>What our Customers are Saying</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, adipisci.</p>
-          <div class="img-text-s flex column">
+      </div>
+    </aside>
+    <!-- testimonials -->
+    <aside class="testimonial-aside">
+      <div class="test-container flex column">
+        <h4>What our Customers are Saying</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae,
+          adipisci.
+        </p>
+        <div class="img-text-s flex column">
           <div class="img-relative">
             <div class="img-container test-icon">
               <div class="img-container final-icons">
-                <svg  class="icon">
+                <svg class="icon">
                   <use
                     xlink:href="icons/sprite.svg#quotes"
                     width="40px"
                     height="40px"
                   ></use>
                 </svg>
+              </div>
             </div>
+            <img src="images/testimonial.jpg" alt="" />
           </div>
-            <img src="images/testimonial.jpg" alt="">
-          </div>
-             <div class="test-line">
-             <p class="test-p"><em>"Lorem ipsum mitun dolor sit amet yea bgh consectetur adipisicing elit. Voluptatibus ad error nisi illo dignissimos quis, itaque tenetur sed saepe explicabo."</em></p>
-              <div class="line-text flex">
-                <div class="final-icons nt-icon">
-                  <svg >
-                    <use
-                      xlink:href="icons/sprite.svg#line"
-                      width="60px"
-                      height="40px"
-                    ></use>
-                  </svg>
+          <div class="test-line">
+            <p class="test-p">
+              <em
+                >"Lorem ipsum mitun dolor sit amet yea bgh consectetur
+                adipisicing elit. Voluptatibus ad error nisi illo dignissimos
+                quis, itaque tenetur sed saepe explicabo."</em
+              >
+            </p>
+            <div class="line-text flex">
+              <div class="final-icons nt-icon">
+                <svg>
+                  <use
+                    xlink:href="icons/sprite.svg#line"
+                    width="60px"
+                    height="40px"
+                  ></use>
+                </svg>
               </div>
               <div class="flex column double-text">
                 <p>John Smith</p>
                 <p class="second">ABC Compacy</p>
               </div>
-              </div>  
-             </div>
+            </div>
           </div>
         </div>
-      </aside>
+      </div>
+    </aside>
+    <!-- Call to action -->
+    <aside class="call-to-action">
+      <div class="container-cta">
+        <div>
+          <h4>Ready to Get Started?</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            rerum recusandae vero. Corporis dolore veniam est reprehenderit
+            nostrum ratione laboriosam.
+          </p>
+        </div>
+        <button class="btn btn-primary btn-cta">Get Started</button>
+      </div>
+    </aside>
+    <!-- footer -->
+    <footer class="final-footer">
+      <div class="foot-list flex column">
+        <!-- n0 1 -->
+        <div class="flex foot-display">
+          <div class="head-text">
+            <h4>Products</h4>
+            <ul class="foot-ul">
+              <li>Website Hosting</li>
+              <li>Free Automated WordPress</li>
+              <li>Migrations</li>
+            </ul>
+          </div>
+          <div class="img-container final-icons foot-icon">
+            <svg class="icon ft-icon">
+              <use
+                xlink:href="icons/sprite.svg#chevron"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <!-- n0 2 -->
+        <div class="flex foot-display">
+          <div class="head-text">
+            <h4>Company</h4>
+            <ul class="foot-ul1">
+              <li>About</li>
+              <li>Affiliates</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="img-container final-icons foot-icon">
+            <svg class="icon ft-icon1">
+              <use
+                xlink:href="icons/sprite.svg#chevron"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <!-- n0 3 -->
+        <div class="flex foot-display">
+          <div class="head-text">
+            <h4>Support</h4>
+            <ul class="foot-ul2">
+              <li>Contact</li>
+              <li>Knowledge Base</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="img-container final-icons foot-icon">
+            <svg class="icon ft-icon2">
+              <use
+                xlink:href="icons/sprite.svg#chevron"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <!-- n0 4 -->
+        <div class="flex foot-display">
+          <div class="head-text">
+            <h4>Domains</h4>
+            <ul class="foot-ul3">
+              <li>Domain Checker</li>
+              <li>Domain Transfer</li>
+              <li>Free Domain</li>
+            </ul>
+          </div>
+          <div class="img-container final-icons foot-icon">
+            <svg class="icon ft-icon3">
+              <use
+                xlink:href="icons/sprite.svg#chevron"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="img-copy flex column">
+          <img src="icons/logo.svg" alt="logo-img" />
+          <p>Copyright 2020 Mosh Hamedani</p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
