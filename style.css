@@ -492,7 +492,7 @@ input[name="domain-name"]:focus {
   }
 }
 
-/* Second-Aside section */
+/* third-Aside Host on the cloud section section */
 .third-aside {
   color: var(--color-body);
   margin-bottom: 100px;
@@ -590,7 +590,7 @@ input[name="domain-name"]:focus {
   max-width: 650px;
 }
 
-/* the fourth aside  */
+/* the fourth aside user-friendly section */
 .fourth-aside {
   background-color: black;
   min-height: 75vh;
@@ -656,16 +656,14 @@ input[name="domain-name"]:focus {
     flex-direction: row;
     gap: 50px;
   }
-  .final-icons {
-    align-self: center;
-  }
+
   .ipad-aside h5 {
     text-align: left;
     max-width: 700px;
   }
 }
 
-/* final-aside */
+/* final-aside testimonial */
 .testimonial-aside {
   margin-top: 100px;
   color: var(--color-body);
@@ -740,9 +738,6 @@ input[name="domain-name"]:focus {
   background-color: var(--color-accent);
 }
 
-/* .spacer {
-  width: 25px;
-} */
 .new-icon {
   fill: white;
 }
@@ -936,7 +931,7 @@ input[name="domain-name"]:focus {
   }
   .foot-list {
     flex-direction: row;
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
   }
   .foot-display {
