@@ -687,13 +687,14 @@ input[name="domain-name"]:focus {
   align-items: center;
 }
 
-.test-card {
-  box-shadow: 0 0 20px 30px #dbdbdb;
+.img-text-s {
+  box-shadow: 0 0 20px 30px #f5f3f3;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
-  background-color: rgb(221, 219, 219);
+  min-height: 50vh;
+  background-color: rgb(255, 255, 255);
   width: 80vw;
+  padding: 30px;
   margin-top: 35px;
   position: relative;
 }
@@ -703,33 +704,54 @@ input[name="domain-name"]:focus {
 }
 .img-text-s img {
   width: 85%;
-  max-width: 500px;
+  max-width: 900px;
   align-self: center;
   margin-bottom: 20px;
 }
 
-.test-card .test-p {
-  font-size: 1.3rem;
-  width: 80%;
+.img-relative {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+/* turning the image container to relative position so that i can position */
+.img-relative .test-icon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.test-icon .icon {
+  fill: white;
+}
+.img-text-s .test-p {
+  font-size: 1.2rem;
+  width: 85%;
+  max-width: 450px;
+  padding-left: 40px;
   color: var(--color-body-darker);
 }
 
-.text-icon {
-  background-color: var(--color-secondary);
-}
 .img-container.test-icon {
-  /* position: absolute;
-  right: 0;
-  top: 50px; */
   background-color: var(--color-accent);
 }
 
+/* .spacer {
+  width: 25px;
+} */
 .new-icon {
   fill: white;
 }
 
+/* This is for the icon below the text */
 .nt-icon svg {
   width: 40px;
+}
+
+.line-text {
+  padding-left: 45px;
 }
 .line-text p {
   color: var(--color-headings);
@@ -747,13 +769,18 @@ input[name="domain-name"]:focus {
   font-size: 0.9rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
   .img-text-s {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     max-width: 1000px;
   }
   .img-text-s .test-p {
     font-size: 1.5rem;
+    min-width: 300px;
+    max-width: 700px;
+  }
+  .img-text-s img {
+    padding-bottom: 90px;
   }
 }
